@@ -25,14 +25,14 @@ Les Modérés calculent l'influence relative de leurs contacts directs (voisins 
 
 Soit $i$ un nœud de profil Modéré, $V(i)$ l'ensemble de ses voisins, et $d(v)$ le degré (nombre de connexions) du voisin $v$. Le nœud $i$ devient actif si :
 
-$$\frac{\sum_{v \in V(i) \text{ et } Statut(v)=1} d(v)}{\sum_{v \in V(i)} d(v)} \geq \text{Seuil\_modere} \quad (\text{avec Seuil\_modere} = 0.30)$$
+$$\frac{\sum_{v \in V(i) \text{ et } Statut(v)=1} d(v)}{\sum_{v \in V(i)} d(v)} \geq \text{Seuil modéré} \quad (\text{avec Seuil modéré} = 0.30)$$
 
 ### 2. Le Profil Prudent : Seuil de Granovetter Global
 Les Prudents ignorent l'état de leur entourage proche et cherchent la sécurité de la masse globale (mimétisme social ou modèle de seuil de Granovetter). Ils ne basculent que si la proportion globale de la population totale engagée franchit un cap psychologique critique.
 
 Soit $A_t$ le nombre total d'activistes dans le réseau à l'étape $t$, et $N$ la taille totale de la population. Le nœud $i$ devient actif si :
 
-$$\frac{A_t}{N} \geq \text{Seuil\_prudent} \quad (\text{avec Seuil\_prudent} = 0.60)$$
+$$\frac{A_t}{N} \geq \text{Seuil prudent} \quad (\text{avec Seuil prudent} = 0.60)$$
 
 ---
 
@@ -57,12 +57,11 @@ Cette approche par graphes et réseaux complexes s'applique aussi bien aux faits
 ```bash
 # 1. Cloner le projet
 git clone https://github.com
-cd zbellion-simulation
+cd PROPAGATION_D-UNE_IDEOLOGIE
 
 # 2. Installer les dépendances
 pip install networkx matplotlib
 
 # 3. Exécuter la simulation
-python simulation.py
+python graphes_social_ideologie.py
 ```
-
