@@ -65,3 +65,8 @@ pip install networkx matplotlib
 # 3. Exécuter la simulation
 python graphes_social_ideologie.py
 ```
+
+
+## 🛠️ Technologies
+
+![Python](https://shields.io) ![NetworkX](https://shields.io) ![Matplotlib](https://shields.io)
